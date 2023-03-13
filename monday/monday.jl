@@ -52,5 +52,5 @@ p2 = plot!(sol,vars=2,title="m = 5, k = 1.0, c = 0.5",label="Position")
 
 plot(p1,p2,layout=(2,1))
 print("gonna save")
-savefig("monday2.png")
+savefig("monday1.png")
 print("end")
