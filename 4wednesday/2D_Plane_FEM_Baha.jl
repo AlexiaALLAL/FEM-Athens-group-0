@@ -1,5 +1,11 @@
-import Gmsh: gmsh
+using Gmsh: gmsh
 using MeshIO
+using FileIO
 
-mesh = readmesh("/data/test_mesh_01.msh","msh")
+gmsh.initialize()
 
+mesh = gmsh.model.add("data/VenturaAccelerometer/test_mesh_01.msh")
+
+coords = []
+nodes = []
+tris = []
